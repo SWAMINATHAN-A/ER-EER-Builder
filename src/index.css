@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "SF Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -0.011em;
+  }
+}
+
+.react-flow__edge-path {
+  stroke: #94a3b8;
+  stroke-width: 2px;
+  transition: stroke 0.2s cubic-bezier(0.16, 1, 0.3, 1), stroke-width 0.2s ease;
+}
+
+.dark .react-flow__edge-path {
+  stroke: #71717a;
+}
+
+.react-flow__edge.selected .react-flow__edge-path {
+  stroke: #0071e3 !important;
+  stroke-width: 2.5px !important;
+}
+
+.dark .react-flow__edge.selected .react-flow__edge-path {
+  stroke: #0a84ff !important;
+  stroke-width: 2.5px !important;
+}
+
+.react-flow__edge-text {
+  font-size: 11px;
+  font-weight: 600;
+  fill: #27272a;
+}
+
+.dark .react-flow__edge-text {
+  fill: #e4e4e7;
+}
+
+.react-flow__handle {
+  transition: transform 0.15s cubic-bezier(0.2, 0.8, 0.2, 1), background-color 0.15s ease;
+}
+
+/* Attractive Modern Scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0071E3;
+  border-radius: 9999px;
+  transition: background-color 0.2s ease;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #0A84FF;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #005bb5;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #409CFF;
+}
+
+/* Specific Dedicated Styling for Left Section Sidebar and Scrollable Panes */
+#diagram-sidebar,
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #0071E3 rgba(0, 0, 0, 0.04);
+}
+
+.dark #diagram-sidebar,
+.dark .custom-scrollbar {
+  scrollbar-color: #0A84FF rgba(255, 255, 255, 0.06);
+}
+
+#diagram-sidebar::-webkit-scrollbar,
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+#diagram-sidebar::-webkit-scrollbar-track,
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 9999px;
+  margin: 6px 0;
+}
+
+.dark #diagram-sidebar::-webkit-scrollbar-track,
+.dark .custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#diagram-sidebar::-webkit-scrollbar-thumb,
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #0071E3 0%, #5856D6 100%);
+  border-radius: 9999px;
+  border: 1.5px solid transparent;
+  background-clip: padding-box;
+  box-shadow: 0 1px 3px rgba(0, 113, 227, 0.3);
+  transition: opacity 0.2s ease, filter 0.2s ease;
+}
+
+#diagram-sidebar::-webkit-scrollbar-thumb:hover,
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #0077ED 0%, #6E6BFF 100%);
+  background-clip: padding-box;
+  box-shadow: 0 2px 6px rgba(0, 113, 227, 0.45);
+  filter: brightness(1.1);
+}
+
+.dark #diagram-sidebar::-webkit-scrollbar-thumb,
+.dark .custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #0A84FF 0%, #5E5CE6 100%);
+  background-clip: padding-box;
+  box-shadow: 0 1px 4px rgba(10, 132, 255, 0.4);
+}
+
+.dark #diagram-sidebar::-webkit-scrollbar-thumb:hover,
+.dark .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #409CFF 0%, #7D7AFF 100%);
+  background-clip: padding-box;
+  box-shadow: 0 2px 8px rgba(10, 132, 255, 0.55);
+  filter: brightness(1.15);
+}

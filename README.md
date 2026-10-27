@@ -1,0 +1,73 @@
+# ER & EER Diagram Studio
+
+> An interactive ER & EER Diagram Studio featuring drag-and-drop modeling, specialization hierarchies, and automated SQL DDL generation. Powered by Gemini AI, it includes an interactive practice arena for schema challenges, structured learning modules, and a quadratic probing hashing visualizer.
+
+---
+
+## ✨ Features
+
+- **🎨 Interactive ER & EER Canvas**: Build Entity-Relationship and Enhanced Entity-Relationship diagrams with drag-and-drop entities, attributes (key, multivalued, composite, derived), and relationships with customizable cardinalities.
+- **🧬 EER Specialization & Generalization**: Model disjoint and overlapping specialization hierarchies with total or partial participation constraints.
+- **⚡ SQL DDL Code Generator**: Instantly generate clean, production-ready SQL DDL statements (CREATE TABLE, PRIMARY KEY, FOREIGN KEY constraints) directly from your diagram.
+- **🎯 Practice Arena**: Solve hands-on database design challenges with real-time AI validation and feedback powered by Google Gemini.
+- **📚 Conceptual Learning Center**: Guided interactive modules explaining database design fundamentals, normalization, ER-to-relational mapping rules, and cardinalities.
+- **🔍 Quadratic Probing Hashing Visualizer**: Step-by-step visual exploration of open addressing hash table collision resolution using quadratic probing.
+- **📤 Export & Sharing**: Export high-resolution PNG, JPEG, and PDF documents of your diagrams with a single click.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React 19, TypeScript / JSX, Vite
+- **Styling**: Tailwind CSS
+- **Diagramming & Layout**: React Flow, Dagre
+- **AI Integration**: Google Gemini API (`@google/genai`)
+- **Icons & Motion**: Lucide React, Motion
+- **Export Utilities**: jsPDF, html2canvas, html-to-image
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- A Gemini API Key from [Google AI Studio](https://aistudio.google.com/)
+
+### Installation & Run
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Saineeraj-Saravanan/ER-EER-Builder.git
+   cd ER-EER-Builder
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Configure Environment Variables:**
+   Create a `.env` or `.env.local` file in the root directory (refer to `.env.example`):
+   ```env
+   GEMINI_API_KEY=your_gemini_api_key_here
+   ```
+
+4. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+   Open `http://localhost:3000` in your browser.
+
+---
+
+## 👥 Developers
+
+- **Prithivraj** (Reg No: 25BCE1073) – Student Developer, B.Tech CSE
+- **Sai Neeraj** (Reg No: 25BCE1066) – Student Developer, B.Tech CSE
+
+---
+
+## 📄 License
+
+This project was developed as part of the Database Management Systems coursework.

@@ -1,0 +1,8 @@
+{
+  "name": "Remix review 2 ER & EER Diagram Builder",
+  "description": "An Entity-Relationship (ER) and Enhanced Entity-Relationship (EER) Diagram Studio with specialization hierarchies, SQL DDL generation, practice arena, and quadratic probing hashing visualizer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

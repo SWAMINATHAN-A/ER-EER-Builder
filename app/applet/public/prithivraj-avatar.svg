@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5f2eb"/>
+      <stop offset="100%" stop-color="#e8e2d5"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ab7753"/>
+      <stop offset="60%" stop-color="#96613e"/>
+      <stop offset="100%" stop-color="#7d4e2f"/>
+    </linearGradient>
+    <linearGradient id="neckGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#73472b"/>
+      <stop offset="100%" stop-color="#5a351d"/>
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#241b17"/>
+      <stop offset="100%" stop-color="#120c09"/>
+    </linearGradient>
+    <linearGradient id="lipGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7a4433"/>
+      <stop offset="50%" stop-color="#8c503e"/>
+      <stop offset="100%" stop-color="#7a4433"/>
+    </linearGradient>
+    <!-- Plaid shirt pattern -->
+    <pattern id="plaidPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#f8f8f8"/>
+      <!-- subtle grey checks -->
+      <rect x="0" y="0" width="40" height="4" fill="#333333" opacity="0.4"/>
+      <rect x="0" y="4" width="40" height="2" fill="#555555" opacity="0.2"/>
+      <rect x="0" y="0" width="4" height="40" fill="#333333" opacity="0.4"/>
+      <rect x="4" y="0" width="2" height="40" fill="#555555" opacity="0.2"/>
+      <!-- secondary thin lines -->
+      <line x1="20" y1="0" x2="20" y2="40" stroke="#888888" stroke-width="1" stroke-dasharray="2,2"/>
+      <line x1="0" y1="20" x2="40" y2="20" stroke="#888888" stroke-width="1" stroke-dasharray="2,2"/>
+    </pattern>
+  </defs>
+
+  <!-- Background: indoor off-white wall -->
+  <rect width="400" height="400" fill="url(#bgGrad)"/>
+  <rect x="360" y="80" width="40" height="320" fill="#d9ceb9" opacity="0.6"/>
+
+  <!-- Shoulders & Torso -->
+  <path d="M 60 400 L 70 330 C 85 295 130 280 160 280 L 240 280 C 270 280 315 295 330 330 L 345 400 Z" fill="url(#plaidPattern)"/>
+  
+  <!-- Backpack Strap on Right Shoulder (viewer's left) -->
+  <path d="M 75 330 C 85 305 110 290 125 290 L 140 330 L 95 400 L 60 400 Z" fill="#2d333b" opacity="0.9"/>
+  <path d="M 70 345 L 125 305" stroke="#1f2328" stroke-width="3"/>
+
+  <!-- White Plaid Collared Shirt V-neck & Lapels -->
+  <path d="M 155 275 L 180 340 L 200 375 L 220 340 L 245 275 Z" fill="#1b1c1e"/>
+  <!-- Inner t-shirt -->
+  <path d="M 175 325 L 200 365 L 225 325 Z" fill="#f0f0f0"/>
+
+  <!-- Shirt Collars -->
+  <path d="M 155 275 L 180 345 L 200 330 L 185 285 Z" fill="#ffffff" stroke="#c0c0c0" stroke-width="1.5"/>
+  <path d="M 245 275 L 220 345 L 200 330 L 215 285 Z" fill="#ffffff" stroke="#c0c0c0" stroke-width="1.5"/>
+  <!-- Button Placket -->
+  <line x1="200" y1="340" x2="200" y2="400" stroke="#e0e0e0" stroke-width="16"/>
+  <circle cx="200" cy="380" r="3.5" fill="#fbfbfb" stroke="#999" stroke-width="1"/>
+
+  <!-- Neck -->
+  <path d="M 165 240 L 165 290 C 180 305 220 305 235 290 L 235 240 Z" fill="url(#neckGrad)"/>
+  <!-- Neck shadow under chin -->
+  <path d="M 165 240 Q 200 268 235 240 L 235 255 Q 200 282 165 255 Z" fill="#4d2b17" opacity="0.6"/>
+
+  <!-- Ears with White AirPods -->
+  <!-- Left Ear (viewer left) -->
+  <path d="M 125 180 C 110 180 110 220 126 230 Z" fill="#8f5937"/>
+  <!-- AirPod Left -->
+  <ellipse cx="126" cy="202" rx="5" ry="7" fill="#ffffff" stroke="#e5e5e5" stroke-width="0.5"/>
+  <path d="M 126 205 L 122 226 C 122 228 124 229 125 229 L 126 229 C 127 229 128 228 128 226 L 128 205 Z" fill="#f8f8f8" stroke="#dcdcdc" stroke-width="0.5"/>
+
+  <!-- Right Ear (viewer right) -->
+  <path d="M 275 180 C 290 180 290 220 274 230 Z" fill="#8f5937"/>
+  <!-- AirPod Right -->
+  <ellipse cx="274" cy="202" rx="5" ry="7" fill="#ffffff" stroke="#e5e5e5" stroke-width="0.5"/>
+  <path d="M 274 205 L 278 226 C 278 228 276 229 275 229 L 274 229 C 273 229 272 228 272 226 L 272 205 Z" fill="#f8f8f8" stroke="#dcdcdc" stroke-width="0.5"/>
+
+  <!-- Face Contour -->
+  <path d="M 130 160 C 130 110 270 110 270 160 C 270 215 250 265 200 265 C 150 265 130 215 130 160 Z" fill="url(#skinGrad)"/>
+
+  <!-- Eyebrows -->
+  <path d="M 148 160 Q 168 152 184 158" stroke="#1d1511" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M 216 158 Q 232 152 252 160" stroke="#1d1511" stroke-width="4" stroke-linecap="round" fill="none"/>
+
+  <!-- Eyes -->
+  <!-- Left Eye -->
+  <ellipse cx="168" cy="172" rx="14" ry="8" fill="#ffffff"/>
+  <ellipse cx="168" cy="172" rx="6.5" ry="6.5" fill="#231710"/>
+  <circle cx="170" cy="170" r="2.2" fill="#ffffff"/>
+  <path d="M 152 170 Q 168 162 184 170" stroke="#18110d" stroke-width="2.5" fill="none"/>
+  <!-- Right Eye -->
+  <ellipse cx="232" cy="172" rx="14" ry="8" fill="#ffffff"/>
+  <ellipse cx="232" cy="172" rx="6.5" ry="6.5" fill="#231710"/>
+  <circle cx="234" cy="170" r="2.2" fill="#ffffff"/>
+  <path d="M 216 170 Q 232 162 248 170" stroke="#18110d" stroke-width="2.5" fill="none"/>
+
+  <!-- Nose -->
+  <path d="M 197 165 L 195 204 Q 192 214 200 216 Q 208 214 205 204 L 203 165" fill="#885231" opacity="0.3"/>
+  <ellipse cx="200" cy="214" rx="8" ry="4.5" fill="#824c2d"/>
+  <ellipse cx="193" cy="215" rx="3.5" ry="2" fill="#4d2b17"/>
+  <ellipse cx="207" cy="215" rx="3.5" ry="2" fill="#4d2b17"/>
+
+  <!-- Lips -->
+  <path d="M 182 238 Q 200 234 218 238 Q 200 248 182 238 Z" fill="url(#lipGrad)"/>
+  <line x1="184" y1="238" x2="216" y2="238" stroke="#52271c" stroke-width="1.2"/>
+  <path d="M 188 239 Q 200 249 212 239" stroke="#9e5d48" stroke-width="1" fill="none"/>
+
+  <!-- Chin shade -->
+  <ellipse cx="200" cy="256" rx="12" ry="4" fill="#693c21" opacity="0.4"/>
+
+  <!-- Distinctive Dark Wavy/Textured Voluminous Hair -->
+  <!-- Hair Base Volume -->
+  <path d="M 120 155 C 105 125 115 80 145 60 C 175 40 225 40 255 60 C 285 80 295 125 280 155 C 275 145 270 120 250 115 C 230 110 220 125 200 125 C 180 125 170 110 150 115 C 130 120 125 145 120 155 Z" fill="url(#hairGrad)"/>
+  
+  <!-- Wavy hair strands & curls on top and forehead -->
+  <!-- Left curls -->
+  <circle cx="130" cy="95" r="24" fill="url(#hairGrad)"/>
+  <circle cx="150" cy="70" r="28" fill="url(#hairGrad)"/>
+  <circle cx="180" cy="55" r="30" fill="url(#hairGrad)"/>
+  <circle cx="215" cy="55" r="30" fill="url(#hairGrad)"/>
+  <circle cx="250" cy="70" r="28" fill="url(#hairGrad)"/>
+  <circle cx="270" cy="95" r="24" fill="url(#hairGrad)"/>
+
+  <!-- Forehead wavy bangs / fringe -->
+  <path d="M 130 120 C 140 140 160 135 170 120 C 180 138 205 135 215 122 C 225 138 250 136 265 120 C 260 100 240 100 220 105 C 200 95 180 100 160 105 C 145 100 135 110 130 120 Z" fill="#140e0b"/>
+  <path d="M 175 122 C 185 142 205 140 215 125" stroke="#1f1612" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <path d="M 148 118 C 158 135 172 132 180 122" stroke="#261b16" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M 215 122 C 225 138 242 135 250 120" stroke="#261b16" stroke-width="5" stroke-linecap="round" fill="none"/>
+
+  <!-- Hair Texture Highlights -->
+  <path d="M 160 65 Q 180 50 205 52" stroke="#3d2c25" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M 195 56 Q 225 52 245 68" stroke="#3d2c25" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M 140 85 Q 155 75 170 80" stroke="#33241e" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M 235 80 Q 255 75 268 90" stroke="#33241e" stroke-width="3" stroke-linecap="round" fill="none"/>
+</svg>
