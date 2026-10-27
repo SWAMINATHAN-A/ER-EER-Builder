@@ -3,6 +3,7 @@
 > An interactive ER & EER Diagram Studio featuring drag-and-drop modeling, specialization hierarchies, and automated SQL DDL generation. Powered by Gemini AI, it includes an interactive practice arena for schema challenges, structured learning modules, and a quadratic probing hashing visualizer.
 
 ---
+-**Hosted on:** https://er-builder-ca36b.web.app/
 
 ## ✨ Features
 
@@ -27,37 +28,12 @@
 
 ---
 
-## 🚀 Getting Started
 
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) (v18 or higher recommended)
-- A Gemini API Key from [Google AI Studio](https://aistudio.google.com/)
-
-### Installation & Run
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Saineeraj-Saravanan/ER-EER-Builder.git
-   cd ER-EER-Builder
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-
-3. **Configure Environment Variables:**
+**Configure Environment Variables:**
    Create a `.env` or `.env.local` file in the root directory (refer to `.env.example`):
    ```env
    GEMINI_API_KEY=your_gemini_api_key_here
    ```
-
-4. **Start the development server:**
-   ```bash
-   npm run dev
-   ```
-   Open `http://localhost:3000` in your browser.
 
 ---
 
